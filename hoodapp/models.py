@@ -24,7 +24,7 @@ class Hood(models.Model):
 
     def delete_hood(self):
         self.delete()
-
+#
     @classmethod
     def find_hood(cls, hood_id):
         return cls.objects.filter(id=hood_id)
