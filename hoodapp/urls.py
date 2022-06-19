@@ -16,3 +16,4 @@ urlpatterns = [
     path('<hood_id>/members', views.hood_members, name= 'hood_members'),
     path('<hood_id>/add-post', views.new_post, name='post'),
 ]
+#
