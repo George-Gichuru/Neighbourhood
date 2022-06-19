@@ -14,7 +14,7 @@ def index(request):
         "hoods" : hoods
     }
     return render(request, 'index.html', ctx)
-
+#
 
 def profile(request , username):
     user = User.objects.get(username=username)
