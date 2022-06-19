@@ -19,9 +19,15 @@ These are the behaviours/features that the application implements for use by a u
 
 As a user I would like to:
 
-- Can register, login or logout
-- Can upload an anouncemments, business they have
-- post whats new
+
+- Sign in with the application to start using.
+- Set up a profile about me and a general location and my neighborhood name.
+- Find a list of different businesses in my neighborhood.
+- Find Contact Information for the health department and Police authorities near my neighborhood.
+- Create Posts that will be visible to everyone in my neighborhood.
+- Change My neighborhood when I decide to move out.
+- Only view details of a single neighborhood.
+
 
 ## Behaviour Driven Development
 
@@ -29,7 +35,10 @@ As a user I would like to:
 | ----------------------- | ------------------ | ----------------------------------------------------- |
 | Login, Signup or Logout | Username, Password | User will be either loggedin, registered, loggedout   |
 | upload a business       | name, desc, image  | The business will be posted to the Myhood page |
-| New Post  |  Whats new? |  Post something new  |
+| Join hood |  N/A |  User wiil be added as a member  |
+| Create a new hood | new hood  |Add hood details eg name, location, police number | 
+| New notice | Whats new | Title and details of whats new in the neighbourhood |
+| Check all members from your hood | name and location | members from your block |
 
 ## SetUp / Installation Requirements
 
