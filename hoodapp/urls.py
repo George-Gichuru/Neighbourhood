@@ -5,6 +5,7 @@ from django.urls import path
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('register/', views.register, name='register'),
     path('profile/<username>', views.profile, name='profile'),
     path('profile/<username>/edit/', views.edit_profile, name='edit-profile'),
     path('new-hood/', views.new_hood, name='new-hood'),
