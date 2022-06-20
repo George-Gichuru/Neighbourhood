@@ -32,10 +32,10 @@ class Hood(models.Model):
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, blank=True, related_name='profile')
-    bio = models.TextField(max_length=200, default="No Bio..", blank=True)
-    profile_pic = CloudinaryField('image')
-    full_name = models.CharField(blank=True, max_length=120)
-    profession = models.CharField(blank=True, max_length=120)
+    bio = models.TextField(max_length=200, default="No Bio..", blank=True, null=True)
+    profile_pic = CloudinaryField('image', null=True)
+    full_name = models.CharField(null=True, blank=True, max_length=120)
+    profession = models.CharField(null=True, blank=True, max_length=120)
     email_address = models.EmailField(null=True, blank=True)
     mobile_number = models.IntegerField(null=True, blank=True)
     location = models.ForeignKey(Hood, on_delete=models.SET_NULL, null=True, related_name='members', blank=True)
