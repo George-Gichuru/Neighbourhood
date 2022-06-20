@@ -2,9 +2,14 @@
 
 This is a Neighbourhood Web-App that helps you connect with people who are living in the same region. Residents of the same region can communicate with each other. Health and police department contact information is easily accessible. The user can also see nearby businesses.
 
-## Author Information
+## Project preview
+![7220 Neighbourhood](./hoodapp/static/css/images/7220%20screenshot.png)
 
-Written by George Gichuru.
+## contributors
+
+Written by: 
+- George Gichuru.
+- April Wairimu
 
 ## Installation
 
@@ -67,12 +72,16 @@ As a user I would like to:
 - Django
 - Bootstrap4
 - Javascript
+- Html
+- Css
 
-Live Link: > 
+Live Link: > https://django-7220app.herokuapp.com/
 
 ## Contact Information
 
-To reach me, email me at: > gichurugeorge092@gmail.com
+For any questions or contributions Email at:
+ > gichurugeorge092@gmail.com
+ > wairimuapril@gmail.com
 
 License
 MIT License
