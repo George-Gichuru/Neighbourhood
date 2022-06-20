@@ -17,7 +17,7 @@ def register(request):
             password = form.cleaned_data.get('password1')
             user = authenticate(username=username, password=password)
             login(request, user)
-            return redirect('home')
+            return redirect('index')
     else:
         form = RegisterForm()
     return render(request, 'django_registration/registration_form.html', {'form': form})
