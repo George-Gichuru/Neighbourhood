@@ -65,7 +65,7 @@ As a user I would like to:
 
 - Python3.10.4
 - Django
-- Bootstrap3
+- Bootstrap4
 - Javascript
 
 Live Link: > 
