@@ -8,8 +8,8 @@ This is a Neighbourhood Web-App that helps you connect with people who are livin
 ## contributors
 
 Written by: 
-George Gichuru.
-April Wairimu
+- George Gichuru.
+- April Wairimu
 
 ## Installation
 
@@ -81,7 +81,7 @@ Live Link: > https://django-7220app.herokuapp.com/
 
 For any questions or contributions Email at:
  > gichurugeorge092@gmail.com
- > wairimuapril@gmail.
+ > wairimuapril@gmail.com
 
 License
 MIT License
