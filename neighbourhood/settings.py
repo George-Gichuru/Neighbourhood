@@ -91,15 +91,25 @@ WSGI_APPLICATION = 'neighbourhood.wsgi.application'
 # }
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'OTF',
-        'USER': 'postgres',
-        'PASSWORD': 'gichuru',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'OTF',
+#         'USER': 'postgres',
+#         'PASSWORD': 'gichuru',
+#     }
+# }
 
+DATABASES={
+   'default':{
+      'ENGINE':'django.db.backends.postgresql_psycopg2',
+      'NAME':'df8ub6kji5a79c',
+      'USER':'gupumwfynwzxky',
+      'PASSWORD':'897bd2ee8b55596c810cc549e7380f8692da0642364bcbab6e04b2de942b7706',
+      'HOST': 'ec2-52-22-136-117.compute-1.amazonaws.com',
+      'PORT':'5432',
+   }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
