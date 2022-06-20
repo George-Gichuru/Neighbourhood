@@ -4,7 +4,7 @@
 {{block.super}}
 
 <div class="container">
-  <form action="/accounts/register/" method="POST" id="form">
+  <form action="/register/" method="POST" id="form">
     {% csrf_token %}
     {% bootstrap_form form %}
     <div class="form-group">
