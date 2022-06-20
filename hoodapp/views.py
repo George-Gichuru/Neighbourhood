@@ -1,10 +1,26 @@
 from django.shortcuts import render, redirect
 from django.http.response import Http404
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth import authenticate, login
 from .models import News, Hood, Business, Profile
 from django.contrib.auth.models import User
-from .forms import EditProfileForm, HoodForm, BusinessForm, NewsForm
+from .forms import RegisterForm, EditProfileForm, HoodForm, BusinessForm, NewsForm
 from django.core.exceptions import ObjectDoesNotExist
+
+
+def register(request):
+    if request.method == 'POST':
+        form = RegisterForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            password = form.cleaned_data.get('password1')
+            user = authenticate(username=username, password=password)
+            login(request, user)
+            return redirect('home')
+    else:
+        form = RegisterForm()
+    return render(request, 'django_registration/registration_form.html', {'form': form})
 
 
 @login_required(login_url='login')
@@ -14,6 +30,7 @@ def index(request):
         "hoods" : hoods
     }
     return render(request, 'index.html', ctx)
+
 
 
 def profile(request , username):
