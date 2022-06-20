@@ -18,7 +18,7 @@
 
 <body>
   <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#" style=" text-align:center">7220 Hood</a>
+    <a class="navbar-brand" href="#" style="padding-top: 20px; text-align:center">7220 Hood</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -46,7 +46,7 @@
         <li class="nav-item">
           <a class="nav-link " href="">
             <i class="fa fa-envelope-o">
-              <span class="badge badge-warning"></span>
+              <span class="badge badge-warning">11</span>
             </i>
             Businesses
           </a>
@@ -75,7 +75,8 @@
         {% if user.is_authenticated %}
         <li class="nav-item active" style="padding-left: 10px;">
           <a><img class="rounded-circle nav-img" src="{{ user.profile.profile_pic.url }}" style="height:50px;width:50px;"></a></li>
-          {{user.profile.full_name}}
+          
+          <li style="color:#fff" class="nav-item active">{{user.profile.full_name}}</li>
           <a href="{% url 'logout' %}" type="button" style="margin-top: 20px; margin-left: 5px; color: #fff;">Logout</a>
         {% else %}
         <li class="nav-item active">
