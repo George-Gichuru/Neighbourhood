@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-pw)o116l40*&qh)5(m2_&kgbhee9xm0j_0v9bybw#z)h(y^6zg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-7220app.herokuapp.com']
+ALLOWED_HOSTS = ['django-7220app.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -43,11 +43,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'hoodapp.apps.HoodappConfig',
     'crispy_forms',
-    'bootstrap3',
+    'bootstrap4',
 
 ]
 
-CRISPY_TEMPLATE_PACK = 'bootstrap3'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
